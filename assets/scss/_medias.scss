@@ -1,0 +1,15 @@
+/*************************************DESKTOP****************************************/
+@media only screen and (min-width: 768px) and (max-width: 2000px){
+      .clasesMovil{
+         display: none;
+      }
+}
+/***********************************MOVIL********************************************/
+@media only screen and (min-width: 0px) and (max-width: 767px){
+      .clasesDesktop{
+         display: none;
+      }
+      .rowImg{
+         display: none;
+      }
+}
