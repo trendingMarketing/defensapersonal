@@ -7266,6 +7266,10 @@ form {
 .index__iframe--formato {
   margin-top: 30px; }
 
+.banner__img--formato {
+  padding: 250px 250px;
+  background-image: url(assets/images/kyoshi-fabian-garcia.jpg); }
+
 .boton__comenzarEntrenar--posicion {
   display: flex;
   flex-wrap: wrap;
@@ -7352,6 +7356,9 @@ footer {
 .posicionRelativa__texto--boxModel {
   text-align: center;
   font-size: 15px; }
+
+body {
+  font-size: 20px; }
 
 h2 {
   font-size: 30px; }
@@ -7473,6 +7480,10 @@ form {
 
 .index__iframe--formato {
   margin-top: 30px; }
+
+.banner__img--formato {
+  padding: 250px 250px;
+  background-image: url(assets/images/kyoshi-fabian-garcia.jpg); }
 
 .boton__comenzarEntrenar--posicion {
   display: flex;
