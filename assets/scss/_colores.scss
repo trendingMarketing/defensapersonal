@@ -1,14 +1,21 @@
 $negro: #140f07;
 $azul: #192b4d;
 $violeta: #4d62aa;
-$gris: #95a2fa;
+$gris: #666666;
 $blanco: #f5ecf5;
+$rojo: #CC0000;
 
-h3{background:$violeta;}
-.introduccion__titulo--color{color:$azul;}
+body{color:$gris;}
+.introduccion__titulo--color{color:$blanco;}
+.introduccion__texto--formato{
+	color:$gris;
+}
 .beneficios__lista--color{
 	background:$gris;
 	}
+.divisionPagina__titulo--color{
+	color:$negro;
+}
 footer{background: darkgrey;}
 
 

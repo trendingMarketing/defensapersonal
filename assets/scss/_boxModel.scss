@@ -7,18 +7,55 @@ h1{text-align:$centrado;
     text-transform:uppercase;}
 h2{text-align:$centrado;}      
 h3{
-   padding:$padding;
    margin:{
    		top:$margin;
    		bottom:$margin;
    		left:$margin;
-   		right:$margin;
-   		}	
+   		right:5px;
+   		}
+   font-weight: 800;
+   text-transform:uppercase;     	
 }
 form{
    text-align: center;
 }
-.introduccion__texto--posicion{text-align:$centrado;}  .beneficios__lista--estilo{list-style:hebrew;}
+.introduccion__texto--posicion{text-align:$centrado;}
+.introduccion__texto--formato{
+    margin:$margin $margin;
+    text-transform:uppercase;
+    font-size: 20px;
+    font-weight:800
+}
+.introduccion__titulo--formato{
+    margin:$marginBig $marginBig;
+    padding:$padding $padding;
+    background:$rojo;
+}
+.aprende__lista--formato{
+    font-size:25px;
+    margin-left:$margin;
+    }
+.beneficios__lista--estilo{list-style:hebrew;}
+.img__training--formato{
+    margin:$margin $margin;
+}
+.divisionPagina__titulo--formato{
+    margin:$marginBig $marginBig;
+    padding:$padding;
+    background-color:#CCCCFF;
+}
+.superate__texto--formato{
+    text-align:$centrado;
+    margin-left:$marginBig;
+}
+.video__texto--formato{
+    margin:$marginBig $marginBig;
+    text-align:left;
+    font-size:30px;
+}
+.index__iframe--formato{
+    margin-top:$marginBig;
+}
 .boton__comenzarEntrenar--posicion{
     display: flex;
     flex-wrap: wrap;
