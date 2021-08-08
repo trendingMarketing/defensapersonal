@@ -58,7 +58,13 @@ form{
 }
 .banner__img--formato{
     padding:250px 250px;
-    background-image:url(assets/images/kyoshi-fabian-garcia.jpg);
+    background-image:url(../images/kyoshi-fabian-garcia.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.banner__texto--formato{
+    padding:25px 25px;
+    background: rgba(250, 250, 250, 0.7); 
 }
 .boton__comenzarEntrenar--posicion{
     display: flex;
