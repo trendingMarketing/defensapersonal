@@ -24,10 +24,10 @@ form{
     margin:$margin $margin;
     text-transform:uppercase;
     font-size: 20px;
-    font-weight:800
+    font-weight:800;
 }
 .introduccion__titulo--formato{
-    margin:$marginBig $marginBig;
+    margin:$marginBig 0px;
     padding:$padding $padding;
     background:$rojo;
 }
@@ -35,12 +35,14 @@ form{
     font-size:25px;
     margin-left:$margin;
     }
+.img__inicio--formato{ box-shadow: 2px 2px 5px #999;}
 .beneficios__lista--estilo{list-style:hebrew;}
 .img__training--formato{
     margin:$margin $margin;
+     box-shadow: 2px 2px 5px #999;
 }
 .divisionPagina__titulo--formato{
-    margin:$marginBig $marginBig;
+    margin:$marginBig 0px;
     padding:$padding;
     background-color:#CCCCFF;
 }
@@ -49,20 +51,33 @@ form{
     margin-left:$marginBig;
 }
 .video__texto--formato{
-    margin:$marginBig $marginBig;
+    margin-top:50px;
+    margin-left:$marginBig;
     text-align:left;
-    font-size:30px;
+    font-size:20px;
 }
 .index__iframe--formato{
     margin-top:$marginBig;
 }
+.clases__banner--formato{
+    margin-top:60px;
+    padding:$padding;
+    background:lightgrey;  
+    text-align:center;
+    text-transform:uppercase;
+}
+.clases__texto--formato{
+    margin-top:70px;
+    }
 .banner__img--formato{
+    margin-top:50px;
     padding:250px 250px;
-    background-image:url(../images/kyoshi-fabian-garcia.jpg);
+    background-image:url(../images/avi-nardia-fabian-garcia.jpg);
     background-repeat:no-repeat;
     background-position:center;
 }
 .banner__texto--formato{
+    margin-top:100px;
     padding:25px 25px;
     background: rgba(250, 250, 250, 0.7); 
 }
