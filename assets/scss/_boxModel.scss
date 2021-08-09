@@ -4,7 +4,8 @@ $marginBig:30px;
 $centrado:center;
 $vista:desktop;
 h1{text-align:$centrado;
-    text-transform:uppercase;}
+    text-transform:uppercase;
+    font-size:50px;}
 h2{text-align:$centrado;}      
 h3{
    margin:{
@@ -42,11 +43,12 @@ form{
      box-shadow: 2px 2px 5px #999;
 }
 .divisionPagina__titulo--formato{
+    text-align:center;
     margin:$marginBig 0px;
     padding:$padding;
     background-color:#CCCCFF;
 }
-.superate__texto--formato{
+.aprende__texto--formato{
     text-align:$centrado;
     margin-left:$marginBig;
 }
@@ -69,10 +71,33 @@ form{
 .clases__texto--formato{
     margin-top:70px;
     }
-.banner__img--formato{
+.requisitos__titulo--formato{
+    padding:$padding $padding;
+    background: red;
+    color:white;
+    margin:50px 0px;
+    text-align:center;
+}    
+.requisitos__img--formato{
+    box-shadow: 2px 2px 5px #999;  
+}
+.pma__texto--formato{
+    text-align:$centrado;
     margin-top:50px;
-    padding:250px 250px;
-    background-image:url(../images/avi-nardia-fabian-garcia.jpg);
+    margin-bottom:50px;
+    padding:$padding $padding;
+    background:lightgrey;
+    color:black;
+}
+.banner__img--formato{
+    margin:{
+            top:50px;
+            bottom:50px;
+            right:25px;
+            left:25px;
+            }
+    padding:200px 200px;
+    background-image:url(../images/kyoshi-fabian-garcia.jpg);
     background-repeat:no-repeat;
     background-position:center;
 }

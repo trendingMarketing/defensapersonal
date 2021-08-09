@@ -1,11 +1,13 @@
 @import "boxModel";
 body{font-size:20px;}
 h2{font-size:30px;}
-h4{font-size:50px;
-font-weight:800;}
+h4{font-size:35px;
+font-weight:800;
+text-transform:uppercase;}
 .introduccion__titulo--fuente{
-	font-size:30px;
+	font-size:50px;
 	font-weight:800;
+	font-family:impact, san serif;
 }
 .divisionPagina__titulo--fuente{
 	font:{
