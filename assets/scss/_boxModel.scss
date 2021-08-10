@@ -51,7 +51,7 @@ form{
 .aprende__texto--formato{
     text-align:$centrado;
     margin-left:$marginBig;
-}
+    margin-bottom:50px;}
 .video__texto--formato{
     margin-top:50px;
     margin-left:$marginBig;
@@ -121,22 +121,68 @@ footer{
      padding:30px 30px;
 }
 /*pagina clases*/
-.clasesCard__padding--posicion{
-    padding:$padding;
+.clasesRegulares{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:flex;
+    justify-content:center;
+}
+.clasesRegulares__img--formato{
+    margin:{
+        top:50px;
+        bottom:50px;
+    }
+    box-shadow: 2px 2px 5px #999;
+}
+.clasesRegulares__titulo--formato{
+    font-size:30px;
+    margin-left:5px;
+}
+.clasesRegulares__texto--formato{
+    margin:$margin $marginBig;
+}
+.banner__clasesRegulares--formato{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding:25px 25px;
+    background:red;
+    color:white;
+    margin-bottom:50px;
 }
 .clasesParticulares__texto--posicion{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
     margin:$margin $margin;
-    text-align:right;
+    text-align:center;
 }
-.clasesGrupos__texto--posicion{
-    text-align:left;
-    margin:$margin $margin;
+.img__trainingOutdoor--formato{
+    box-shadow: 2px 2px 5px #999;
 }
+.img__clasesOnline--formato{
+    box-shadow: 2px 2px 5px #999;
+}
+.clasesOnline{
+    margin:70px 0px;
+}
+.clasesOnline__titulo--formato{}
 .clasesOnline__texto--posicion{
     text-align:center;
     margin:$marginBig $marginBig;
 }
+.banner__clasesOnline--formato{
+    padding:$padding $padding;
+    background:lightgrey;
+    color:red;
+    text-align:center;
+}
 /*--------------------*/
+.card-title{
+    font-size:25px;
+    font-weight:800;
+}
 @if $vista==desktop{
     @media only screen and(min-width:1024px){
     h1{font-size:100px;}

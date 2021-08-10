@@ -1,6 +1,8 @@
 @import "boxModel";
 body{font-size:20px;}
-h2{font-size:30px;}
+h2{font-size:30px;
+text-transform:uppercase;
+font-weight:800}
 h4{font-size:35px;
 font-weight:800;
 text-transform:uppercase;}
@@ -19,9 +21,10 @@ text-transform:uppercase;}
 }
 /*pagina clases*/
 .clasesDefensa__titulo--fuente{
+	margin:50px;
 	font:{
 		family:impact,san serif;
-		size:30px;
+		size:50px;
 		weight:500;
 		leter-spacing:3px;
 		}
@@ -32,28 +35,13 @@ text-transform:uppercase;}
 		size:25px;
 		leter-spacing:2px
 		}
-}	
-.clasesParticulares__titulo--fuente{
-	font:{
-		family:impact, san serif;
-		size:30px;
-		weight:500
-		}
-	text-transform:uppercase;	
-}
+}		
 .clasesGrupos__titulo--fuente{
 	font:{
 		family:impact, san serif;
 		size:30px;
 		}
 	text-transform:uppercase;	
-}
-.clasesOnline__titulo--fuente{
-	font:{
-		family:impact, san serif;
-		size:30px;
-	}
-	text-transform:uppercase;
 }
 .cursoKapap__titulo--fuente{
     font-size:30px;

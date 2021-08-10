@@ -7262,7 +7262,8 @@ form {
 
 .aprende__texto--formato {
   text-align: center;
-  margin-left: 30px; }
+  margin-left: 30px;
+  margin-bottom: 50px; }
 
 .video__texto--formato {
   margin-top: 50px;
@@ -7333,22 +7334,65 @@ footer {
   padding: 30px 30px; }
 
 /*pagina clases*/
-.clasesCard__padding--posicion {
-  padding: 25px; }
+.clasesRegulares {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: flex;
+  justify-content: center; }
+
+.clasesRegulares__img--formato {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 2px 2px 5px #999; }
+
+.clasesRegulares__titulo--formato {
+  font-size: 30px;
+  margin-left: 5px; }
+
+.clasesRegulares__texto--formato {
+  margin: 15px 30px; }
+
+.banner__clasesRegulares--formato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px 25px;
+  background: red;
+  color: white;
+  margin-bottom: 50px; }
 
 .clasesParticulares__texto--posicion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   margin: 15px 15px;
-  text-align: right; }
+  text-align: center; }
 
-.clasesGrupos__texto--posicion {
-  text-align: left;
-  margin: 15px 15px; }
+.img__trainingOutdoor--formato {
+  box-shadow: 2px 2px 5px #999; }
+
+.img__clasesOnline--formato {
+  box-shadow: 2px 2px 5px #999; }
+
+.clasesOnline {
+  margin: 70px 0px; }
 
 .clasesOnline__texto--posicion {
   text-align: center;
   margin: 30px 30px; }
 
+.banner__clasesOnline--formato {
+  padding: 25px 25px;
+  background: lightgrey;
+  color: red;
+  text-align: center; }
+
 /*--------------------*/
+.card-title {
+  font-size: 25px;
+  font-weight: 800; }
+
 @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 100px; } }
@@ -7407,7 +7451,9 @@ body {
   font-size: 20px; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800; }
 
 h4 {
   font-size: 35px;
@@ -7427,8 +7473,9 @@ h4 {
 
 /*pagina clases*/
 .clasesDefensa__titulo--fuente {
+  margin: 50px;
   font-family: impact,san serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 500;
   font-leter-spacing: 3px;
   text-transform: uppercase; }
@@ -7437,18 +7484,7 @@ h4 {
   font-size: 25px;
   font-leter-spacing: 2px; }
 
-.clasesParticulares__titulo--fuente {
-  font-family: impact, san serif;
-  font-size: 30px;
-  font-weight: 500;
-  text-transform: uppercase; }
-
 .clasesGrupos__titulo--fuente {
-  font-family: impact, san serif;
-  font-size: 30px;
-  text-transform: uppercase; }
-
-.clasesOnline__titulo--fuente {
   font-family: impact, san serif;
   font-size: 30px;
   text-transform: uppercase; }
@@ -7533,7 +7569,8 @@ form {
 
 .aprende__texto--formato {
   text-align: center;
-  margin-left: 30px; }
+  margin-left: 30px;
+  margin-bottom: 50px; }
 
 .video__texto--formato {
   margin-top: 50px;
@@ -7604,22 +7641,65 @@ footer {
   padding: 30px 30px; }
 
 /*pagina clases*/
-.clasesCard__padding--posicion {
-  padding: 25px; }
+.clasesRegulares {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: flex;
+  justify-content: center; }
+
+.clasesRegulares__img--formato {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 2px 2px 5px #999; }
+
+.clasesRegulares__titulo--formato {
+  font-size: 30px;
+  margin-left: 5px; }
+
+.clasesRegulares__texto--formato {
+  margin: 15px 30px; }
+
+.banner__clasesRegulares--formato {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px 25px;
+  background: red;
+  color: white;
+  margin-bottom: 50px; }
 
 .clasesParticulares__texto--posicion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   margin: 15px 15px;
-  text-align: right; }
+  text-align: center; }
 
-.clasesGrupos__texto--posicion {
-  text-align: left;
-  margin: 15px 15px; }
+.img__trainingOutdoor--formato {
+  box-shadow: 2px 2px 5px #999; }
+
+.img__clasesOnline--formato {
+  box-shadow: 2px 2px 5px #999; }
+
+.clasesOnline {
+  margin: 70px 0px; }
 
 .clasesOnline__texto--posicion {
   text-align: center;
   margin: 30px 30px; }
 
+.banner__clasesOnline--formato {
+  padding: 25px 25px;
+  background: lightgrey;
+  color: red;
+  text-align: center; }
+
 /*--------------------*/
+.card-title {
+  font-size: 25px;
+  font-weight: 800; }
+
 @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 100px; } }
