@@ -7393,6 +7393,50 @@ footer {
   font-size: 25px;
   font-weight: 800; }
 
+.cursos__Card1--formato {
+  display: flex;
+  felx-dierction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.cursos__Card2--formato {
+  display: flex;
+  felx-dierction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.cursos__Card3--formato {
+  display: flex;
+  felx-dierction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.pma__texto--formato {
+  margin: 15px 30px;
+  text-align: center; }
+
+.biografia {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.pma__tituloBiografia--formato {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 25px;
+  background: lightgrey; }
+
+.biografia__img--formato {
+  margin: 0px 35px; }
+
+.biografia__titulo--formato {
+  font-size: 50px;
+  color: black; }
+
+.biografia__lista--formato {
+  margin: 25px 30px; }
+
 @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 100px; } }
@@ -7493,7 +7537,8 @@ h4 {
   font-size: 30px; }
 
 .lasPma__titulo--fuente {
-  font-size: 30px; }
+  font-size: 50px;
+  font-weight: 800; }
 
 .contacto__titulo--fuente {
   font-size: 40px; }
@@ -7699,6 +7744,50 @@ footer {
 .card-title {
   font-size: 25px;
   font-weight: 800; }
+
+.cursos__Card1--formato {
+  display: flex;
+  felx-dierction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.cursos__Card2--formato {
+  display: flex;
+  felx-dierction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.cursos__Card3--formato {
+  display: flex;
+  felx-dierction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.pma__texto--formato {
+  margin: 15px 30px;
+  text-align: center; }
+
+.biografia {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.pma__tituloBiografia--formato {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px 25px;
+  background: lightgrey; }
+
+.biografia__img--formato {
+  margin: 0px 35px; }
+
+.biografia__titulo--formato {
+  font-size: 50px;
+  color: black; }
+
+.biografia__lista--formato {
+  margin: 25px 30px; }
 
 @media only screen and (min-width: 1024px) {
   h1 {
