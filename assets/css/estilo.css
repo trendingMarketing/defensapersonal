@@ -7526,14 +7526,13 @@ h4 {
   .navbar-brand{
     display: none;
   } }
-@media only screen and (min-width:1300px) and (max-width:2000px){
-  .carousel-item{
-    width: 80%;
-  }
-}  
+  
 
 /***********************************MOVIL********************************************/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  .logoInicio{
+    width: 80%;
+  }
   .clasesDesktop {
     display: none; }
   .rowImg {
