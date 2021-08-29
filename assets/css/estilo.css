@@ -7530,9 +7530,6 @@ h4 {
 
 /***********************************MOVIL********************************************/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .logoInicio{
-    width: 80%;
-  }
   .clasesDesktop {
     display: none; }
   .rowImg {
@@ -7551,16 +7548,19 @@ h4 {
   }
   .biografia__img--formato{
     display: none;  }  
- 
   .divisionPagina{
     display: none;}
   .img__training--formato{
-    display: none;
-  }
+    display: none;}
   .video__texto--formato{
-    
-    font-size: 5px;
-  }
+    font-size: 5px; }
+  .clases__Card--formato{
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+
   }
 
 .introduccion__texto--posicion {
