@@ -33,7 +33,7 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-
+*{outline: red solid;}
 *,
 *::before,
 *::after {
@@ -2987,7 +2987,9 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+  font-weight: 600; 
+  text-transform: uppercase;}
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
@@ -4496,7 +4498,7 @@ a.close.disabled {
   padding: 0.5rem 0.75rem;
   color: #212529; }
 
-.carousel {
+.carouselMovil {
   position: relative; }
 
 .carousel.pointer-event {
@@ -4758,7 +4760,7 @@ button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
 .bg-light {
-  background-color: #f8f9fa !important; }
+  background-color: white !important; }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -7201,30 +7203,8 @@ body {
 .divisionPagina__titulo--color {
   color: #140f07; }
 
-footer {
-  background: darkgrey; }
-
 .clasesCard__padding--color {
   background: #4d62aa; }
-
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 50px; }
-
-h2 {
-  text-align: center; }
-
-h3 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 5px;
-  font-weight: 800;
-  text-transform: uppercase; }
-
-form {
-  text-align: center; }
 
 .introduccion__texto--posicion {
   text-align: center; }
@@ -7235,10 +7215,20 @@ form {
   font-size: 20px;
   font-weight: 800; }
 
-.introduccion__titulo--formato {
-  margin: 30px 0px;
-  padding: 25px 25px;
-  background: #CC0000; }
+  .introduccion__titulo--formato{
+    margin:35px 0px;
+    padding:10px 15px;
+    font-size:50px;
+    font-weight:800;
+    font-family:impact, san serif;
+    background:#CC0000;
+    color:#f5ecf5;}
+
+.introduccion__subtitulo--formato {
+  margin: 15px 15px;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #333333; }
 
 .aprende__lista--formato {
   font-size: 25px;
@@ -7258,9 +7248,10 @@ form {
   text-align: center;
   margin: 30px 0px;
   padding: 25px;
-  background-color: #CCCCFF; }
+  background-color: #CCCCFF;
+  color: #333333; }
 
-.aprende__texto--formato {
+.simple__texto--formato {
   text-align: center;
   margin-left: 30px;
   margin-bottom: 50px; }
@@ -7275,9 +7266,9 @@ form {
   margin-top: 30px; }
 
 .clases__banner--formato {
-  margin-top: 60px;
+  margin-top: 60px ;
   padding: 25px;
-  background: lightgrey;
+  background: lightgray;
   text-align: center;
   text-transform: uppercase; }
 
@@ -7285,7 +7276,7 @@ form {
   margin-top: 70px; }
 
 .requisitos__titulo--formato {
-  padding: 25px 25px;
+  padding: 25px 0px;
   background: red;
   color: white;
   margin: 50px 0px;
@@ -7305,9 +7296,7 @@ form {
 .banner__img--formato {
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-right: 25px;
-  margin-left: 25px;
-  padding: 200px 200px;
+  padding: 200px 100px;
   background-image: url(../images/kyoshi-fabian-garcia.jpg);
   background-repeat: no-repeat;
   background-position: center; }
@@ -7327,13 +7316,7 @@ form {
 .logo {
   margin-top: 50px; }
 
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px 30px; }
-
-/*pagina clases*/
+/*****************************************************************pagina clases*/
 .clasesRegulares {
   display: flex;
   flex-direction: column;
@@ -7395,19 +7378,19 @@ footer {
 
 .cursos__Card1--formato {
   display: flex;
-  felx-dierction: row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
 
 .cursos__Card2--formato {
   display: flex;
-  felx-dierction: row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
 
 .cursos__Card3--formato {
   display: flex;
-  felx-dierction: row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
 
@@ -7419,85 +7402,82 @@ footer {
   margin-top: 50px;
   margin-bottom: 50px; }
 
-.pma__tituloBiografia--formato {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  padding: 25px 25px;
-  background: lightgrey; }
-
 .biografia__img--formato {
   margin: 0px 35px; }
 
 .biografia__titulo--formato {
+  padding: 25px 25px;
+  background: red;
   font-size: 50px;
-  color: black; }
+  color: white; }
 
 .biografia__lista--formato {
   margin: 25px 30px; }
 
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 100px; } }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0px;
+  margin-left: -0px; }
 
-/*linea 126*/
-.clases-1 {
-  font-size: 10px; }
+.pma__tituloBiografia--formato {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center; }
 
-.clases-2 {
-  font-size: 20px; }
+.bannerContacto__img--formato {
+  margin-top: 35px; }
 
-.clases-3 {
-  font-size: 30px; }
-
-/*maps***************************************************************/
-.pma {
-  background-color: #192b4d;
-  text-align: center;
-  font-weight: 600;
-  padding: 10 px;
-  color: white; }
-
-/*****************************/
-.entrenarConceptos__titulo--boxModel {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 25px;
-  color: #CC0000; }
-
-.entrenarConceptos__texto--boxModel {
-  text-align: center;
-  font-size: 15px; }
-
-.economiaMovimiento__titulo--boxModel {
-  font-size: 25px;
+.bannerContacto__texto--formato {
+  margin: 50px 20px;
+  font-size: 30px;
+  font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  color: #CC0000; }
+  color: grey; }
 
-.economiaMovimiento__texto--boxModel {
-  text-align: center;
-  font-size: 15px;
-  margin: 15px; }
+/****************************************footer*******************/
+footer {
+  border-top: #140f07 solid 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 30px; }
 
-.posicionRelativa__titulo--boxModel {
-  color: #CC0000;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 25px; }
+.footer__redes--formato {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center; }
 
-.posicionRelativa__texto--boxModel {
-  text-align: center;
-  font-size: 15px; }
+.footer__contacto--formato {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center; }
 
 body {
   font-size: 20px; }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px; }
+
 h2 {
+  text-align: center;
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 800; }
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 5px;
+  font-weight: 800;
+  text-transform: uppercase; }
 
 h4 {
   font-size: 35px;
@@ -7513,7 +7493,7 @@ h4 {
   font-family: impact,san serif;
   font-size: 40px;
   font-weight: 500;
-  font-letter-spacing: 5px; }
+  letter-spacing: 5px;}
 
 /*pagina clases*/
 .clasesDefensa__titulo--fuente {
@@ -7521,12 +7501,11 @@ h4 {
   font-family: impact,san serif;
   font-size: 50px;
   font-weight: 500;
-  font-leter-spacing: 3px;
-  text-transform: uppercase; }
+   text-transform: uppercase; }
 
 .clasesCard__texto--fuente {
-  font-size: 25px;
-  font-leter-spacing: 2px; }
+  font-size: 25px;}
+
 
 .clasesGrupos__titulo--fuente {
   font-family: impact, san serif;
@@ -7540,13 +7519,13 @@ h4 {
   font-size: 50px;
   font-weight: 800; }
 
-.contacto__titulo--fuente {
-  font-size: 40px; }
-
 /*************************************DESKTOP****************************************/
 @media only screen and (min-width: 768px) and (max-width: 2000px) {
   .clasesMovil {
-    display: none; } }
+    display: none; }
+  .navbar-brand{
+    display: none;
+  } }
 
 /***********************************MOVIL********************************************/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -7557,26 +7536,27 @@ h4 {
   .index__iframe--formato {
     display: none; }
   .banner__img--formato {
-    display: none; } }
-
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 50px; }
-
-h2 {
-  text-align: center; }
-
-h3 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 5px;
-  font-weight: 800;
-  text-transform: uppercase; }
-
-form {
-  text-align: center; }
+    display: none; }
+  .carousel{
+    display: none; } 
+  .introduccion__subtitulo--formato{
+    color:white;  }
+  .pma__texto--formato{
+    display: none;
+  }
+  .biografia__img--formato{
+    display: none;  }  
+ 
+  .divisionPagina{
+    display: none;}
+  .img__training--formato{
+    display: none;
+  }
+  .video__texto--formato{
+    
+    font-size: 5px;
+  }
+  }
 
 .introduccion__texto--posicion {
   text-align: center; }
@@ -7586,11 +7566,11 @@ form {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 800; }
-
-.introduccion__titulo--formato {
-  margin: 30px 0px;
-  padding: 25px 25px;
-  background: #CC0000; }
+.introduccion__subtitulo--formato {
+  margin: 15px 15px;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #333333; }
 
 .aprende__lista--formato {
   font-size: 25px;
@@ -7610,9 +7590,10 @@ form {
   text-align: center;
   margin: 30px 0px;
   padding: 25px;
-  background-color: #CCCCFF; }
+  background-color: #CCCCFF;
+  color: #333333; }
 
-.aprende__texto--formato {
+.simple__texto--formato {
   text-align: center;
   margin-left: 30px;
   margin-bottom: 50px; }
@@ -7627,9 +7608,9 @@ form {
   margin-top: 30px; }
 
 .clases__banner--formato {
-  margin-top: 60px;
+  margin-top: 60px ;
   padding: 25px;
-  background: lightgrey;
+  background: lightgray;
   text-align: center;
   text-transform: uppercase; }
 
@@ -7637,7 +7618,7 @@ form {
   margin-top: 70px; }
 
 .requisitos__titulo--formato {
-  padding: 25px 25px;
+  padding: 25px 0px;
   background: red;
   color: white;
   margin: 50px 0px;
@@ -7657,9 +7638,7 @@ form {
 .banner__img--formato {
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-right: 25px;
-  margin-left: 25px;
-  padding: 200px 200px;
+  padding: 200px 100px;
   background-image: url(../images/kyoshi-fabian-garcia.jpg);
   background-repeat: no-repeat;
   background-position: center; }
@@ -7679,13 +7658,7 @@ form {
 .logo {
   margin-top: 50px; }
 
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px 30px; }
-
-/*pagina clases*/
+/*****************************************************************pagina clases*/
 .clasesRegulares {
   display: flex;
   flex-direction: column;
@@ -7747,19 +7720,19 @@ footer {
 
 .cursos__Card1--formato {
   display: flex;
-  felx-dierction: row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
 
 .cursos__Card2--formato {
   display: flex;
-  felx-dierction: row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
 
 .cursos__Card3--formato {
   display: flex;
-  felx-dierction: row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
 
@@ -7771,74 +7744,67 @@ footer {
   margin-top: 50px;
   margin-bottom: 50px; }
 
-.pma__tituloBiografia--formato {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  padding: 25px 25px;
-  background: lightgrey; }
-
 .biografia__img--formato {
   margin: 0px 35px; }
 
 .biografia__titulo--formato {
+  padding: 25px 25px;
+  background: red;
   font-size: 50px;
-  color: black; }
+  color: white; }
 
 .biografia__lista--formato {
   margin: 25px 30px; }
 
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 100px; } }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0px;
+  margin-left: -0px; }
 
-/*linea 126*/
-.clases-1 {
-  font-size: 10px; }
+.pma__tituloBiografia--formato {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center; }
 
-.clases-2 {
-  font-size: 20px; }
+.bannerContacto__img--formato {
+  margin-top: 35px; }
 
-.clases-3 {
-  font-size: 30px; }
-
-/*maps***************************************************************/
-.pma {
-  background-color: #192b4d;
-  text-align: center;
-  font-weight: 600;
-  padding: 10 px;
-  color: white; }
-
-/*****************************/
-.entrenarConceptos__titulo--boxModel {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 25px;
-  color: #CC0000; }
-
-.entrenarConceptos__texto--boxModel {
-  text-align: center;
-  font-size: 15px; }
-
-.economiaMovimiento__titulo--boxModel {
-  font-size: 25px;
+.bannerContacto__texto--formato {
+  margin: 50px 20px;
+  font-size: 30px;
+  font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  color: #CC0000; }
+  color: grey; }
 
-.economiaMovimiento__texto--boxModel {
-  text-align: center;
-  font-size: 15px;
-  margin: 15px; }
+/****************************************footer*******************/
+footer {
+  border-top: #140f07 solid 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 30px; }
 
-.posicionRelativa__titulo--boxModel {
-  color: #CC0000;
-  text-align: center;
+.footer__redes--formato {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center; }
+
+.footer__contacto--formato {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center; }
+.navBarFlex{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.navBarBrand--formato{
   text-transform: uppercase;
-  font-size: 25px; }
-
-.posicionRelativa__texto--boxModel {
-  text-align: center;
-  font-size: 15px; }
+  font-weight: 800;
+}

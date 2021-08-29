@@ -2,23 +2,19 @@ $negro: #140f07;
 $azul: #192b4d;
 $violeta: #4d62aa;
 $gris: #666666;
+$grisOscuro: #333333;
 $blanco: #f5ecf5;
 $rojo: #CC0000;
 
 body{color:$gris;}
-.introduccion__titulo--color{color:$blanco;}
-.introduccion__texto--formato{
-	color:$gris;
-}
+
+
 .beneficios__lista--color{
 	background:$gris;
 	}
 .divisionPagina__titulo--color{
 	color:$negro;
 }
-footer{background: darkgrey;}
-
-
 .clasesCard__padding--color{
 	background:$violeta;
 }

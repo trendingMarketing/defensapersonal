@@ -2,41 +2,31 @@ $padding:25px;
 $margin:15px;
 $marginBig:30px;
 $centrado:center;
-$vista:desktop;
-h1{text-align:$centrado;
-    text-transform:uppercase;
-    font-size:50px;}
-h2{text-align:$centrado;}      
-h3{
-   margin:{
-   		top:$margin;
-   		bottom:$margin;
-   		left:$margin;
-   		right:5px;
-   		}
-   font-weight: 800;
-   text-transform:uppercase;     	
-}
-form{
-   text-align: center;
-}
+
+.navBarBrand--formato{
+    text-transform: uppercase;
+    font-weight: 800;
+  }
 .introduccion__texto--posicion{text-align:$centrado;}
 .introduccion__texto--formato{
     margin:$margin $margin;
     text-transform:uppercase;
     font-size: 20px;
     font-weight:800;
+    color:$gris;
 }
-.introduccion__titulo--formato{
-    margin:$marginBig 0px;
-    padding:$padding $padding;
-    background:$rojo;
+
+.introduccion__subtitulo--formato{
+    margin:$margin $margin;
+    text-transform:uppercase;
+    font-size:50px;
+    color:$grisOscuro;
 }
 .aprende__lista--formato{
     font-size:25px;
     margin-left:$margin;
     }
-.img__inicio--formato{ box-shadow: 2px 2px 5px #999;}
+.img__inicio--formato{box-shadow: 2px 2px 5px #999;}
 .beneficios__lista--estilo{list-style:hebrew;}
 .img__training--formato{
     margin:$margin $margin;
@@ -47,11 +37,13 @@ form{
     margin:$marginBig 0px;
     padding:$padding;
     background-color:#CCCCFF;
+    color:$grisOscuro;
 }
-.aprende__texto--formato{
+.simple__texto--formato{
     text-align:$centrado;
     margin-left:$marginBig;
-    margin-bottom:50px;}
+    margin-bottom:50px;
+}
 .video__texto--formato{
     margin-top:50px;
     margin-left:$marginBig;
@@ -62,7 +54,7 @@ form{
     margin-top:$marginBig;
 }
 .clases__banner--formato{
-    margin-top:60px;
+    margin-top:150px 10px;
     padding:$padding;
     background:lightgrey;  
     text-align:center;
@@ -70,9 +62,9 @@ form{
 }
 .clases__texto--formato{
     margin-top:70px;
-    }
+}
 .requisitos__titulo--formato{
-    padding:$padding $padding;
+    padding:$padding 0px;
     background: red;
     color:white;
     margin:50px 0px;
@@ -93,10 +85,8 @@ form{
     margin:{
             top:50px;
             bottom:50px;
-            right:25px;
-            left:25px;
             }
-    padding:200px 200px;
+    padding:200px 100px;
     background-image:url(../images/kyoshi-fabian-garcia.jpg);
     background-repeat:no-repeat;
     background-position:center;
@@ -114,13 +104,8 @@ form{
     padding: 10px 10px;
     }
 .logo{margin-top:50px;}
-footer{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     padding:30px 30px;
-}
-/*pagina clases*/
+
+/*****************************************************************pagina clases*/
 .clasesRegulares{
     display:flex;
     flex-direction:column;
@@ -150,6 +135,7 @@ footer{
     color:white;
     margin-bottom:50px;
 }
+
 .clasesParticulares__texto--posicion{
     display:flex;
     flex-wrap:wrap;
@@ -167,7 +153,6 @@ footer{
 .clasesOnline{
     margin:70px 0px;
 }
-.clasesOnline__titulo--formato{}
 .clasesOnline__texto--posicion{
     text-align:center;
     margin:$marginBig $marginBig;
@@ -185,19 +170,19 @@ footer{
 }
 .cursos__Card1--formato{
     display:flex;
-    felx-dierction:row;
+    flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
 }
 .cursos__Card2--formato{
     display:flex;
-    felx-dierction:row;
+    flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
 }
 .cursos__Card3--formato{
     display:flex;
-    felx-dierction:row;
+    flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
 }
@@ -211,81 +196,57 @@ footer{
         bottom:50px;
     }
 }
-.pma__tituloBiografia--formato{
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    justify-content:center;
-    padding:$padding $padding;
-    background:lightgrey;
-}
 .biografia__img--formato{
     margin:0px 35px;
 }
 .biografia__titulo--formato{
+    padding:$padding $padding;
+    background:red;
     font-size:50px;
-    color:black;
+    color:white;
 }
 .biografia__lista--formato{
     margin:$padding 30px;
 
 }
-@if $vista==desktop{
-    @media only screen and(min-width:1024px){
-    h1{font-size:100px;}
-    }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0px;
+  margin-left: -0px; }
+.pma__tituloBiografia--formato{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:center;}
+.bannerContacto__img--formato{
+    margin-top:35px;
 }
-@else if $vista==mobile{
-    @media only screen and(min-width:767px){
-    h1{font-size:500px;}
-    }
-}
-/*linea 126*/
-@for $i from 1 through 3{
-    .clases-#{$i}{font-size:10px*$i;}
-}
-
-/*maps***************************************************************/
-$estilos:(
-color:$azul,
-centro:center,
-);
-.pma{
-    background-color: map-get($estilos, color);
-    text-align: map-get($estilos, centro);
-    font-weight:600;
-    padding: 10 px;
-    color:white;
-}
-/*****************************/
-.entrenarConceptos__titulo--boxModel{
-    text-align:$centrado;
-    text-transform: uppercase;
-    font-size:25px;
-    color:$blue;
-}
-.entrenarConceptos__texto--boxModel{
-    text-align:$centrado;
-    font-size:15px;
-}
-.economiaMovimiento__titulo--boxModel{
-    font-size:25px;
+.bannerContacto__texto--formato{
+    margin:50px 20px;
+    font-size:30px;
+    font-weight:800;
     text-transform:uppercase;
-    text-align:$centrado;
-    color: $blue;
+    text-align:center;
+    color:grey;
 }
-.economiaMovimiento__texto--boxModel{
-    text-align:$centrado;
-    font-size:15px;
-    margin:$margin;
+/****************************************footer*******************/
+footer{
+     border-top: $negro solid 4px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding:30px 30px;
 }
-.posicionRelativa__titulo--boxModel{
-    color:$blue;
-    text-align:$centrado;
-    text-transform:uppercase;
-    font-size:25px;
+.footer__redes--formato{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:center;
 }
-.posicionRelativa__texto--boxModel{
-    text-align:$centrado;
-    font-size:15px;
+.footer__contacto--formato{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:center;
 }
