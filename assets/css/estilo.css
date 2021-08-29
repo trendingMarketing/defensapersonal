@@ -7257,7 +7257,6 @@ body {
 
 .video__texto--formato {
   margin-top: 50px;
-  margin-left: 30px;
   text-align: left;
   font-size: 20px; }
 
@@ -7603,7 +7602,6 @@ h4 {
 
 .video__texto--formato {
   margin-top: 50px;
-  margin-left: 30px;
   text-align: left;
   font-size: 20px; }
 
@@ -7846,4 +7844,8 @@ footer {
   .center-block-horiz {
   margin-left: auto !important;
   margin-right: auto !important;
+  }
+  .requisitos__lista--formato{
+    text-align:center;
+    margin: 0px;
   }
